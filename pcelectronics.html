@@ -15,23 +15,33 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="./pcelectronics.html" class="navbar-brand" href="#"
+    <nav class="navbar navbar-inverse" data-cy="navbar navbar-inverse">
+      <div class="container-fluid" data-cy="container-fluid">
+        <div class="navbar-header" data-cy="navbar-header">
+          <a
+            href="./pcelectronics.html"
+            class="navbar-brand"
+            data-cy="navbar-brand"
+            href="#"
             >PC Electronics</a
           >
         </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="./pcelectronics.html">Inicio</a></li>
-          <li class="dropdown">
+        <ul
+          class="nav navbar-nav navbar-right"
+          data-cy="nav navbar-nav navbar-right"
+        >
+          <li class="active">
+            <a href="./pcelectronics.html" data-cy="active">Inicio</a>
+          </li>
+          <li class="dropdown" data-cy="dropdown-1">
             <a
               class="dropdown-toggle"
+              data-cy="dropdown-toggle-1"
               data-toggle="dropdown"
               href="./administrador.html"
               >Administrador <span class="caret"></span
             ></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-cy="dropdown-menu-1">
               <li>
                 <a href="./php/crear-base-datos.php">Crear Base de Datos</a>
               </li>
@@ -41,11 +51,15 @@
               <li><a href="./php/pdf.php">Generar Informe PDF</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-              >Inventario <span class="caret"></span
+          <li class="dropdown" data-cy="dropdown-2">
+            <a
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              data-cy="dropdown-toggle-2"
+              href="#"
+              >Inventario <span class="caret" data-cy="caret-2"></span
             ></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-cy="dropdown-menu-2">
               <li><a href="ingresar-producto.html">Ingresar Producto</a></li>
               <li>
                 <a href="actualizar-producto.html">Actualizar Producto</a>
@@ -56,11 +70,15 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-              >Utilidades <span class="caret"></span
+          <li class="dropdown" data-cy="dropdown-3">
+            <a
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              data-cy="dropdown-toggle-3"
+              href="#"
+              >Utilidades <span class="caret" data-cy="caret-3"></span
             ></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-cy="dropdown-menu-3">
               <li>
                 <a href="./calculadora-venta.html"
                   >Valor de Venta de Producto</a
@@ -76,13 +94,13 @@
         </ul>
       </div>
     </nav>
-    <div class="container mt-3">
+    <div class="container mt-3" data-cy="container mt-3">
       <h2>Tabla de Usuarios</h2>
       <p>
         Esta tabla contiene la relacion de usuarios con acceso al aplicativo
         web:
       </p>
-      <table class="table table-bordered">
+      <table class="table table-bordered" data-cy="table table-bordered">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -115,6 +133,7 @@
         width="400"
         height="400"
         class="rounded-circle"
+        data-cy="img-pcelectronics-home"
       />
     </center>
     <script src="./script.js"></script>

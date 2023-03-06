@@ -13,85 +13,125 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="./pcelectronics.html" class="navbar-brand" href="#">PC Electronics</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./pcelectronics.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="./administrador.html">Administrador
-              <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./php/crear-base-datos.php">Crear Base de Datos</a></li>
-                        <li><a href="./php/crear-tabla.php">Crear Tabla</a></li>
-                        <li><a href="./php/backup.php">Crear BackUp</a></li>
-                        <li><a href="./php/eliminar-tabla.php">Eliminar Tabla</a></li>
-                        <li><a href="./php/pdf.php">Generar Informe PDF</a></li>
-                    </ul>
+    <nav class="navbar navbar-inverse" data-cy="navbar navbar-inverse">
+        <div class="container-fluid" data-cy="container-fluid">
+          <div class="navbar-header" data-cy="navbar-header">
+            <a
+              href="./pcelectronics.html"
+              class="navbar-brand"
+              data-cy="navbar-brand"
+              href="#"
+              >PC Electronics</a
+            >
+          </div>
+          <ul
+            class="nav navbar-nav navbar-right"
+            data-cy="nav navbar-nav navbar-right"
+          >
+            <li class="active">
+              <a href="./pcelectronics.html" data-cy="active">Inicio</a>
+            </li>
+            <li class="dropdown" data-cy="dropdown-1">
+              <a
+                class="dropdown-toggle"
+                data-cy="dropdown-toggle-1"
+                data-toggle="dropdown"
+                href="./administrador.html"
+                >Administrador <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" data-cy="dropdown-menu-1">
+                <li>
+                  <a href="./php/crear-base-datos.php">Crear Base de Datos</a>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventario
-              <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="ingresar-producto.html">Ingresar Producto</a></li>
-                        <li><a href="actualizar-producto.html">Actualizar Producto</a></li>
-                        <li><a href="./eliminar-producto.html">Eliminar Producto</a></li>
-                        <li><a href="./consultar-producto.html">Consultar Producto</a></li>
-                    </ul>
+                <li><a href="./php/crear-tabla.php">Crear Tabla</a></li>
+                <li><a href="./php/backup.php">Crear BackUp</a></li>
+                <li><a href="./php/eliminar-tabla.php">Eliminar Tabla</a></li>
+                <li><a href="./php/pdf.php">Generar Informe PDF</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" data-cy="dropdown-2">
+              <a
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                data-cy="dropdown-toggle-2"
+                href="#"
+                >Inventario <span class="caret" data-cy="caret-2"></span
+              ></a>
+              <ul class="dropdown-menu" data-cy="dropdown-menu-2">
+                <li><a href="ingresar-producto.html">Ingresar Producto</a></li>
+                <li>
+                  <a href="actualizar-producto.html">Actualizar Producto</a>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilidades
-                <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./calculadora-venta.html">Valor de Venta de Producto</a></li>
-                        <li><a href="./equivalencia-datos.html">Valor de Equivalencia entre Tamaño de Datos</a></li>
-                    </ul>
+                <li><a href="./eliminar-producto.html">Eliminar Producto</a></li>
+                <li>
+                  <a href="./consultar-producto.html">Consultar Producto</a>
                 </li>
-            </ul>
+              </ul>
+            </li>
+            <li class="dropdown" data-cy="dropdown-3">
+              <a
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                data-cy="dropdown-toggle-3"
+                href="#"
+                >Utilidades <span class="caret" data-cy="caret-3"></span
+              ></a>
+              <ul class="dropdown-menu" data-cy="dropdown-menu-3">
+                <li>
+                  <a href="./calculadora-venta.html"
+                    >Valor de Venta de Producto</a
+                  >
+                </li>
+                <li>
+                  <a href="./equivalencia-datos.html"
+                    >Valor de Equivalencia entre Tamaño de Datos</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <table class="table-condensed">
+      </nav>
+    <div class="container" data-cy="container-1">
+        <div class="row" data-cy="row">
+            <div class="col-sm-6" data-cy="col-sm-6">
+                <table class="table-condensed" data-cy="table-condensed">
                     <thead>
                         <h2>Ingresar Producto Nuevo</h2>
                     </thead>
                     <tbody>
                         <tr>
                             <form action="./php/insertar.php" method="POST">
-                                <div class="form-group">
+                                <div class="form-group" data-cy="form-group-1">
                                     <label for="codigo-producto">Codigo del Producto</label>
-                                    <input type="text" class="form-control" id="codigo-producto" placeholder="Ingrese el codigo del producto" name="id">
+                                    <input type="text" class="form-control" data-cy="codigo-producto" id="codigo-producto" placeholder="Ingrese el codigo del producto" name="id">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-cy="form-group-2">
                                     <label for="nombre-producto">Nombre del Producto</label>
-                                    <input type="text" class="form-control" id="nombre-producto" placeholder="Ingrese el nombre del producto" name="nombre">
+                                    <input type="text" class="form-control" data-cy="nombre-producto" id="nombre-producto" placeholder="Ingrese el nombre del producto" name="nombre">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-cy="form-group-3">
                                     <label for="marca-producto">Marca del Producto</label>
-                                    <input type="text" class="form-control" id="marca-producto" placeholder="Ingrese la marca del producto" name="marca">
+                                    <input type="text" class="form-control" data-cy="marca-producto" id="marca-producto" placeholder="Ingrese la marca del producto" name="marca">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-cy="form-group-4">
                                     <label for="precio-producto">Precio de compra del Producto</label>
-                                    <input type="text" class="form-control" id="precio-producto" placeholder="Ingrese el precio de compra del producto" name="precio">
+                                    <input type="text" class="form-control" data-cy="precio-producto" id="precio-producto" placeholder="Ingrese el precio de compra del producto" name="precio">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-cy="form-group-5">
                                     <label for="cantidad-producto">Cantidad comprada del Producto</label>
-                                    <input type="text" class="form-control" id="cantidad-producto" placeholder="Ingrese la cantidad comprada del producto" name="cantidad">
+                                    <input type="text" class="form-control" data-cy="cantidad-producto" id="cantidad-producto" placeholder="Ingrese la cantidad comprada del producto" name="cantidad">
                                 </div>
                                 <div>
-                                    <button type="submit" class="btn btn-primary btn-lg">Registrar</button>
-                                    <button type="button" class="btn btn-danger btn-lg" id="limpiar">Limpiar</button>
+                                    <button type="submit" class="btn btn-primary btn-lg" data-cy="registrar" id="registrar">Registrar</button>
+                                    <button type="button" class="btn btn-danger btn-lg" data-cy="limpiar" id="limpiar">Limpiar</button>
                                 </div>
                             </form>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <center><img src="https://img1.freepng.es/20180404/wbw/kisspng-royalty-free-stock-photography-computer-icons-clip-add-to-cart-button-5ac5432d435d72.2786229015228772292759.jpg" width="400" height="400" class="rounded-circle">
+            <center><img src="https://img1.freepng.es/20180404/wbw/kisspng-royalty-free-stock-photography-computer-icons-clip-add-to-cart-button-5ac5432d435d72.2786229015228772292759.jpg" width="400" height="400" class="rounded-circle" data-cy="img-ingresar-producto">
             </center>
 
 
