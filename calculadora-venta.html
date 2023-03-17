@@ -36,7 +36,7 @@
                 class="dropdown-toggle"
                 data-cy="dropdown-toggle-1"
                 data-toggle="dropdown"
-                href="./administrador.html"
+                href="#"
                 >Administrador <span class="caret"></span
               ></a>
               <ul class="dropdown-menu" data-cy="dropdown-menu-1">
@@ -45,7 +45,7 @@
                 </li>
                 <li><a href="./php/crear-tabla.php">Crear Tabla</a></li>
                 <li><a href="./php/backup.php">Crear BackUp</a></li>
-                <li><a href="./php/eliminar-tabla.php">Eliminar Tabla</a></li>
+                <li><a href="./php/eliminar-base-datos.php">Eliminar Base de Datos</a></li>
                 <li><a href="./php/pdf.php">Generar Informe PDF</a></li>
               </ul>
             </li>
@@ -99,34 +99,32 @@
                     <thead>
                         <h2>Calculadora del Valor de Venta</h2>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Valor de Compra</td>
-                            <td><input type="text" id="valor-compra" data-cy="valor-compra"></td>
-                        </tr>
-                        <tr>
-                            <td>% Utilidad o Ganancia</td>
-                            <td><input type="text" id="valor-utilidad" data-cy="valor-utilidad"></td>
-                        </tr>
-                        <tr>
-                            <td>% IVA</td>
-                            <td><input type="text" readonly id="valor-iva" placeholder="19%" data-cy="valor-iva"></td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" onclick="calcularVenta()" class="btn btn-success btn-lg btn-block" data-cy="calcular" id="calcular">Calcular</button></td>
-                        </tr>
-                        <tr>
-                            <td>Valor de Venta</td>
-                            <td><input type="number" class="bg-success" data-cy="valor-venta" readonly id="valor-venta" placeholder="$"></td>
-                        </tr>
-                        <tr>
-                            <td>Ganancia</td>
-                            <td><input type="number" class="bg-success" data-cy="ganancia" readonly id="ganancia" placeholder="$" |></td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-danger btn-lg btn-block" data-cy="limpiar" id="limpiar">Limpiar</button></td>
-                        </tr>
-                    </tbody>
+                    <form>
+                        <div class="form-group" data-cy="form-group-1">
+                            <label>Valor de Compra</label>
+                            <input type="text" id="valor-compra" data-cy="valor-compra">
+                        </div>
+                        <div class="form-group" data-cy="form-group-2">
+                            <label>% Utilidad o Ganancia</label>
+                            <input type="text" id="valor-utilidad" data-cy="valor-utilidad"></label>
+                        </div>
+                        <div class="form-group" data-cy="form-group-3">
+                            <label>% IVA</label>
+                           <input type="text" readonly id="valor-iva" placeholder="19%" data-cy="valor-iva"></label>
+                        </div>
+                        <div class="form-group" data-cy="form-group-4">
+                            <label>Valor de Venta</label>
+                            <input type="number" class="bg-success" data-cy="valor-venta" readonly id="valor-venta" placeholder="$"></label>
+                        </div>
+                        <div class="form-group" data-cy="form-group-5">
+                           <label>Ganancia</label>
+                           <input type="number" class="bg-success" data-cy="ganancia" readonly id="ganancia" placeholder="$" |></label>
+                        </div>
+                        <div>
+                          <label><button type="button" onclick="calcularVenta()" class="btn btn-success btn-lg btn-block" data-cy="calcular" id="calcular">Calcular</button></label>
+                            <label><button type="button" class="btn btn-danger btn-lg btn-block" data-cy="limpiar" id="limpiar">Limpiar</button></label>
+                        </div>
+                    <form>
                 </table>
             </div>
             <center><img src="https://img1.freepng.es/20180131/lrq/kisspng-casio-graphic-calculators-casio-graphic-calculator-desktop-calculator-5a722ee76f5999.1709153915174325514561.jpg" width="300" height="300" class="rounded-circle" data-cy="img-calculadora-venta">

@@ -1,0 +1,24 @@
+{
+  "name": "pcelectronics",
+  "version": "1.0.0",
+  "description": "Unviersity project for a website app connected to a database using PHP",
+  "main": "script.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick738996/pcelectronics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick738996/pcelectronics/issues"
+  },
+  "homepage": "https://github.com/Nick738996/pcelectronics#readme",
+  "devDependencies": {
+    "cypress": "^12.7.0",
+    "cypress-dark": "^1.8.3"
+  }
+}
